@@ -5,7 +5,7 @@
 3가지를 알아보자
 
 - Semaphore
-[Semaphore.md](Semaphore.md)
+[Semaphore](Semaphore.md)
 - CycleBarrier
 [CycleBarrier](CycleBarrier.md)
 - CountDownLatch
