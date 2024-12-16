@@ -6,6 +6,7 @@
 - FixedThreadPool
 [FixedThreadPool](FixedThreadPool.md)
 - CachedThreadPool
+- [CachedThreadPool](CachedThreadPool.md)
 - SingleThreadExecutor
 - ScheduledThreadPool
 - WorkStealingPool
