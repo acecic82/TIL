@@ -6,9 +6,6 @@ countDown() 으로 숫자를 줄일 수 있다.
 await() 로 모두 0이 될 때까지 대기할 수 있다.
 
 ```kotlin
-import java.util.concurrent.CountDownLatch
-import kotlin.concurrent.thread
-
 fun main() {
     val latch = CountDownLatch(3) // 카운트다운 초기값
 
@@ -30,5 +27,3 @@ fun main() {
 재사용이 불가능하다
 
 ### Dive Deep
-
-왜 재사용이 불가능할까? 내부를 봐야한다.
