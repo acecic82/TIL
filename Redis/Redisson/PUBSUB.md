@@ -71,5 +71,7 @@ end
 
 ### TODO
 
+1. key 를 lua script 로 가져올때 실패시 다시 publish 이벤트가 발생하지 않아 무한 대기하는 문제
+
 
 
