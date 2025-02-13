@@ -73,5 +73,30 @@ end
 
 1. key 를 lua script 로 가져올때 실패시 다시 publish 이벤트가 발생하지 않아 무한 대기하는 문제
 
+### 번외
+
+channel 을 subscribe 한 client 들은 Publish 이벤트 발생시 과연 진짜 깨어나서 락 획득을 시도할까?
+
+이 궁금증을 해결하기 위해 몇 가지 방법이 있는데 2가지를 시도해보았다.
+
+**redis-cli monitor 를 이용한 방법**
+
+redis-cli 를 이용하면 redis server 를 모니터링 하듯 볼 수 있다.
+
+![img_2.png](img_2.png)
+
+이런 식으로 여러 클라에서 값 획득을 시도하는 것을 볼 수 있다.
+
+2번째 방법으로는 wireshark 를 이용하는 방법이 있는데 나의 경우엔 로컬이어서 lo 를 기준으로 캡쳐를 하였다.
+
+```kotlin
+tcp.port == 6379
+```
+
+이런식으로 포트를 기준으로 필터를 하면 패킷도 확인할 수 있다.
+
+![img_5.png](img_5.png)
+
+
 
 
